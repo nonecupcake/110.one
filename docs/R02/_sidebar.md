@@ -1,3 +1,3 @@
 - LuoFeixiang's Journal
 
-  - [2025's Journal](2025/2025.md)
+  - [2025's Journal](docs/R02/2025/)
