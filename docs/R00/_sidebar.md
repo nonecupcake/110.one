@@ -1,1 +1,15 @@
-
+- Five-year plans White paper
+  - [First Plan (2020–2025)](1st/)
+  - [Second Plan (2025–2030)]()
+  - [Third Plan (2030–2035)]()
+  - [Fourth Plan (2035–2040)]()
+  - [Fifth Plan (2040–2045)]()
+  - [Sixth Plan (2045–2050)]()
+  - [Seventh Plan (2050–2055)]()
+  - [Eighth Plan (2055–2060)]()
+  - [Ninth Plan (2060–2065)]()
+  - [Tenth Plan (2065–2070)]()
+  - [Eleventh Plan (2070–2075)]()
+  - [Twelfth Plan (2075–2080)]()
+  - [Thirteenth Plan (2080–2085)]()
+  - [Fourteenth Plan (2085–2090)]()
