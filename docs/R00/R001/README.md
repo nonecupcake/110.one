@@ -4,20 +4,20 @@
       <table style="background-color:rgb(255, 255, 255);">
         <tbody>
           <tr>
-            <td style="background-color:rgb(240, 240, 240);border:1px solid rgb(221, 221, 221);padding:6px 13px;width:200px;">Full Title</td>
-            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1000px;">First Five-Year Plan</td>
+            <td style="background-color:rgb(240, 240, 240);border:1px solid rgb(221, 221, 221);padding:6px 13px;width:100px;">Full Title</td>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1100px;">First Five-Year Plan</td>
           </tr>
           <tr>
             <td style="background-color:rgb(240, 240, 240);border:1px solid rgb(221, 221, 221);padding:6px 13px;width:200px;">Start Date</td>
-            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1000px;">20250101</td>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1100px;">20250101</td>
           </tr>
           <tr>
             <td style="background-color:rgb(240, 240, 240);border:1px solid rgb(221, 221, 221);padding:6px 13px;width:200px;">End Date</td>
-            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1000px;">20251231</td>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1100px;">20251231</td>
           </tr>
           <tr>
             <td style="background-color:rgb(240, 240, 240);border:1px solid rgb(221, 221, 221);padding:6px 13px;width:200px;">Duration</td>
-            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1000px;">365Days</td>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:1100px;">365Days</td>
           </tr>
         </tbody>
       </table>
