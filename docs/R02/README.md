@@ -1,3 +1,3 @@
 # LuoFeixiang's Journal
 
-—— Cross the World with me.
+—— Remember all the good things in your life.
