@@ -1,3 +1,3 @@
 # LuoFeixiang's Journal
 
-—— Remember all the good things in your life.
+—— Time will punish everyone who does not love to document life.
