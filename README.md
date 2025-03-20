@@ -7,6 +7,7 @@
 > [Journal](docs/R02/)  
 > [About me](docs/R03/)
 > [](docs/R04/)
+> [Good Games](docs/R05/)
 
 ## My Write
 
