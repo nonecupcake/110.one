@@ -1,3 +1,0 @@
-- [Good Games](docs/R05/)
-  - [都市天际线](docs/R05/citysky2/)
-  - 
