@@ -53,3 +53,20 @@
         </tbody>
       </table>
     </figure>
+
+## Good Habits
+
+<figure class="table" style="width:1200px;">
+      <table>
+        <tbody>
+          <tr>
+            <td style="background-color:#f0f0f0;width:400px;">Good Habits</td>
+            <td style="background-color:#f0f0f0;width:800px;">Days</td>
+          </tr>
+          <tr>
+            <td>Get up at 5 o'clock</td>
+            <td>1</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
