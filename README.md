@@ -2,9 +2,9 @@
 
 ## Record Books
 
-> [Five-year plans White paper](docs/R00/)  
+> [Five-year plans White paper](docs/R100/)  
 > [Stocks Investment Tracker Book](docs/R01/)  
-> [Journal](docs/R02/)
+> [Journal](docs/R102/)
 
 ## Write
 
