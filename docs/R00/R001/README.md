@@ -69,7 +69,7 @@
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;">—</td>
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;">1</td>
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;">Expect</td>
-            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;">&nbsp;</td>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;">Done</td>
           </tr>
         </tbody>
       </table>
