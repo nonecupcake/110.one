@@ -86,3 +86,20 @@
 - [ ] 担任职业导师助力他人发展
 - [ ] 完成山野隐居七日体验
 - [ ] 亲历子女毕业礼/婚礼等重要时刻
+
+## 大事记
+
+<figure class="table" style="width:1200px;">
+      <table>
+        <tbody>
+          <tr>
+            <td style="background-color:#f0f0f0;width:1000px;">事件</td>
+            <td style="background-color:#f0f0f0;width:200px;">日期</td>
+          </tr>
+          <tr>
+            <td>获得C1 驾照</td>
+            <td>20250324</td>
+          </tr>
+        </tbody>
+      </table>
+    </figure>
