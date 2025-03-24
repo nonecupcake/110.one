@@ -1,5 +1,9 @@
 # 2025's Journal
 
+## 20250324S
+
+破戒了，已标注。
+
 ## 20250321
 
 The exam is coming in 20 days, and time is passing so quietly.
