@@ -6,3 +6,7 @@
 > [Five-year Plans White Paper](docs/R00/)  
 > [Stocks Investment Tracker Report](docs/R01/)  
 > [Stocks Investment Tracker Paper Demo Account](docs/R03/)  
+
+## Some Collect
+
+> [好东西](docs/S01/)  
