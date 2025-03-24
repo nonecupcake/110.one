@@ -1,5 +1,4 @@
 - [Five-year plans White paper](docs/R00/)
-
   - [First Plan (2020–2025)](docs/R00/R001/)
   - [Second Plan (2025–2030)](docs/R00/)
   - [Third Plan (2030–2035)](docs/R00/)
