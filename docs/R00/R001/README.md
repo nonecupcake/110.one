@@ -59,7 +59,7 @@
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;width:36px;">3</td>
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;width:664px;">BMI</td>
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;width:100px;">—</td>
-            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;width:100px;">21</td>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;width:100px;">20</td>
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;width:100px;">Constrain</td>
             <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;text-align:center;width:100px;">&nbsp;</td>
           </tr>
