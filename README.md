@@ -7,6 +7,10 @@
 > [Stocks Investment Tracker Report](docs/R01/)  
 > [Stocks Investment Tracker Paper Demo Account](docs/R03/)  
 
+## Write Something
+
+> [Reading Note](docs/W01/)  
+
 ## Some Collect
 
 > [好东西](docs/S01/)  
