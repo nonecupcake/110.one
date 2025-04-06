@@ -1,5 +1,9 @@
 # 2025's Journal
 
+## 20250406S
+
+lazy copy,no content.
+
 ## 20250402S
 
 我背东西好快，我好聪明啊。哈哈哈哈
