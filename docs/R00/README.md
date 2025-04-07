@@ -57,15 +57,19 @@
 ## Good Habits
 
 <figure class="table" style="width:1200px;">
-      <table>
+      <table style="background-color:rgb(255, 255, 255);">
         <tbody>
           <tr>
-            <td style="background-color:#f0f0f0;width:400px;">Good Habits</td>
-            <td style="background-color:#f0f0f0;width:800px;">Days</td>
+            <td style="background-color:rgb(240, 240, 240);border:1px solid rgb(221, 221, 221);padding:6px 13px;width:400px;">Good Habits</td>
+            <td style="background-color:rgb(240, 240, 240);border:1px solid rgb(221, 221, 221);padding:6px 13px;width:800px;">Days/Times</td>
           </tr>
           <tr>
-            <td>Get up at 5 o'clock</td>
-            <td>1</td>
+            <td>冷水澡</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;">4<strong> : </strong>50起床</td>
+            <td style="border:1px solid rgb(221, 221, 221);padding:6px 13px;">1</td>
           </tr>
         </tbody>
       </table>
