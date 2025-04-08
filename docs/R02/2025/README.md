@@ -1,5 +1,9 @@
 # 2025's Journal
 
+## 20250408
+
+成功早起，快考试了
+
 ## 20250406S
 
 lazy copy,no content.
