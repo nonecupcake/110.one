@@ -9,7 +9,7 @@
           </tr>
           <tr>
             <td style="background-color:#f0f0f0;">单次捐款路径</td>
-            <td>https://www.unicef.cn/take-action/donate-once</td>
+            <td><a href="https://www.unicef.cn/take-action/donate-once" target="_blank">https://www.unicef.cn/take-action/donate-once</a></td>
           </tr>
         </tbody>
       </table>
