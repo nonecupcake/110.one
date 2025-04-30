@@ -6,7 +6,7 @@
 
 ## 我如何分配我的收入？
 
-![](R01Files/R01filesmoneyasset.jpg){width=50%}
+<img src="R01Files/R01filesmoneyasset.jpg" style="width:50%; height:auto;" />
 
 ## 202504
 
