@@ -17,4 +17,4 @@
 
 ## 20250430
 
-![](R03Files/R0320250430.jpg)
+<img src="R03Files/R0320250430.jpg" style="width:40%; height:auto;" />
