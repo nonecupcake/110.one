@@ -5,7 +5,7 @@
         <tbody>
           <tr>
             <td style="background-color:#f0f0f0;">捐款总额</td>
-            <td>0</td>
+            <td>2CNY</td>
           </tr>
           <tr>
             <td style="background-color:#f0f0f0;">单次捐款路径</td>
@@ -14,3 +14,7 @@
         </tbody>
       </table>
     </figure>
+
+## 20250430
+
+
