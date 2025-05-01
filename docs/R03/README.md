@@ -19,4 +19,4 @@
 
 ## 20250430
 
-<img src="/docs/R03/R03Files/R0320250430.jpg" width="35%" />
+<img src="https://via.placeholder.com/800x400" width="50%">
