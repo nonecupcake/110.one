@@ -1,12 +1,6 @@
 # Stocks Investment Tracker Book
 
-* 公布个人持仓调整报告，每月捐赠当期投资利润的10%。
-* 全球投资账户：美国盈透证券。
-* 国内投资账户：中国中信证券。
-
-## 我如何分配我的收入？
-
-<img src="R01Files/R01filesmoneyasset.jpg" style="width:50%; height:auto;" />
+* 像是一个
 
 ## 202504
 
