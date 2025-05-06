@@ -1,131 +1,118 @@
 (function emojiCursor() {
-  
-  var possibleEmoji = ["😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "☺️", "😊", "😇", "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗", "😙", "😚", "😋", "😛", "😝", "😜", "🤪", "😎", "🤓", "🧐", "🤩", "😏", "😒", "😞", "😔", "😟", "🙁", "☹️", "😣", "😖", "😫", "😩", "😤", "😠", "😡", "🤬", "😈", "👿", "🤢", "🤮", "🤧", "🥵", "🥶", "🥴", "😵", "🤯", "🤠", "🥳", "😎", "🤓", "🧐", "😕", "😟", "🙁", "☹️", "😮", "😯", "😲", "😳", "🥺", "😦", "😧", "😨", "😰", "😥", "😢", "😭", "😱", "😖", "😣", "😞", "😓", "😩", "😫", "🥱", "😤", "😡", "😠", "🤬"];
-  var width = window.innerWidth;
-  var height = window.innerHeight;
-  var cursor = {x: width/2, y: width/2};
-  var particles = [];
-  
+  const possibleEmoji = [...new Set(["😀", "😃", "😄", "😁", "😆", "😅", "😂", "🤣", "☺️", "😊", "😇", "🙂", "🙃", "😉", "😌", "😍", "🥰", "😘", "😗", "😙", "😚", "😋", "😛", "😝", "😜", "🤪", "😎", "🤓", "🧐", "🤩", "😏", "😒", "😞", "😔", "😟", "🙁", "☹️", "😣", "😖", "😫", "😩", "😤", "😠", "😡", "🤬", "😈", "👿", "🤢", "🤮", "🤧", "🥵", "🥶", "🥴", "😵", "🤯", "🤠", "🥳", "😕", "😟", "🙁", "☹️", "😮", "😯", "😲", "😳", "🥺", "😦", "😧", "😨", "😰", "😥", "😢", "😭", "😱", "😖", "😣", "😞", "😓", "😩", "😫", "🥱", "😤", "😡", "😠", "🤬"])];
+  let width = window.innerWidth;
+  let height = window.innerHeight;
+  const cursor = { x: width / 2, y: width / 2 };
+  let particles = [];
+  let scheduledAnimationFrame = false;
+
   function init() {
+    addStyles();
     bindEvents();
     loop();
   }
-  
-  // Bind events that are needed
+
+  function addStyles() {
+    const style = document.createElement('style');
+    style.textContent = `
+      .emoji-cursor-particle {
+        position: fixed;
+        top: 0;
+        display: block;
+        pointer-events: none;
+        z-index: 10000000;
+        font-size: 24px;
+        will-change: transform;
+      }
+    `;
+    document.head.appendChild(style);
+  }
+
   function bindEvents() {
     document.addEventListener('mousemove', onMouseMove);
     document.addEventListener('touchmove', onTouchMove);
     document.addEventListener('touchstart', onTouchMove);
-    
     window.addEventListener('resize', onWindowResize);
   }
-  
-  function onWindowResize(e) {
+
+  function onWindowResize() {
     width = window.innerWidth;
     height = window.innerHeight;
   }
-  
+
   function onTouchMove(e) {
-    if( e.touches.length > 0 ) {
-      for( var i = 0; i < e.touches.length; i++ ) {
-        addParticle( e.touches[i].clientX, e.touches[i].clientY, possibleEmoji[Math.floor(Math.random()*possibleEmoji.length)]);
+    if (e.touches.length > 0) {
+      for (let i = 0; i < e.touches.length; i++) {
+        scheduleParticleAdd(e.touches[i].clientX, e.touches[i].clientY);
       }
     }
   }
-  
-  function onMouseMove(e) {    
+
+  function onMouseMove(e) {
     cursor.x = e.clientX;
     cursor.y = e.clientY;
-    
-    addParticle( cursor.x, cursor.y, possibleEmoji[Math.floor(Math.random()*possibleEmoji.length)]);
+    scheduleParticleAdd(cursor.x, cursor.y);
   }
-  
+
+  function scheduleParticleAdd(x, y) {
+    if (!scheduledAnimationFrame) {
+      scheduledAnimationFrame = true;
+      requestAnimationFrame(() => {
+        addParticle(x, y, possibleEmoji[Math.floor(Math.random() * possibleEmoji.length)]);
+        scheduledAnimationFrame = false;
+      });
+    }
+  }
+
   function addParticle(x, y, character) {
-    var particle = new Particle();
+    const particle = new Particle();
     particle.init(x, y, character);
     particles.push(particle);
   }
-  
+
   function updateParticles() {
-    
-    // Updated
-    for( var i = 0; i < particles.length; i++ ) {
-      particles[i].update();
-    }
-    
-    // Remove dead particles
-    for( var i = particles.length -1; i >= 0; i-- ) {
-      if( particles[i].lifeSpan < 0 ) {
-        particles[i].die();
-        particles.splice(i, 1);
+    particles = particles.filter(particle => {
+      particle.update();
+      if (particle.lifeSpan < 0) {
+        particle.die();
+        return false;
       }
-    }
-    
+      return true;
+    });
   }
-  
+
   function loop() {
     requestAnimationFrame(loop);
     updateParticles();
   }
-  
-  /**
-   * Particles
-   */
-  
+
   function Particle() {
+    this.lifeSpan = 120; // 120 frames
 
-    this.lifeSpan = 120; //ms
-    this.initialStyles ={
-      "position": "fixed",
-      "top": "0",
-      "display": "block",
-      "pointerEvents": "none",
-      "z-index": "10000000",
-      "fontSize": "24px",
-      "will-change": "transform"
-    };
-
-    // Init, and set properties
     this.init = function(x, y, character) {
-
       this.velocity = {
-        x:  (Math.random() < 0.5 ? -1 : 1) * (Math.random() / 2),
+        x: (Math.random() - 0.5) * 0.5, // -0.25 ~ 0.25
         y: 1
       };
-      
-      this.position = {x: x - 10, y: y - 20};
-
+      this.position = { x: x - 10, y: y - 20 };
       this.element = document.createElement('span');
-      this.element.innerHTML = character;
-      applyProperties(this.element, this.initialStyles);
-      this.update();
-      
+      this.element.className = 'emoji-cursor-particle';
+      this.element.textContent = character;
       document.body.appendChild(this.element);
     };
-    
+
     this.update = function() {
       this.position.x += this.velocity.x;
       this.position.y += this.velocity.y;
       this.lifeSpan--;
-      
-      this.element.style.transform = "translate3d(" + this.position.x + "px," + this.position.y + "px,0) scale(" + (this.lifeSpan / 120) + ")";
-    }
-    
+      const scale = this.lifeSpan / 120;
+      this.element.style.transform = `translate3d(${this.position.x}px, ${this.position.y}px, 0) scale(${scale})`;
+    };
+
     this.die = function() {
-      this.element.parentNode.removeChild(this.element);
-    }
+      this.element.remove();
+    };
   }
-  
-  /**
-   * Utils
-   */
-  
-  // Applies css `properties` to an element.
-  function applyProperties( target, properties ) {
-    for( var key in properties ) {
-      target.style[ key ] = properties[ key ];
-    }
-  }
-  
+
   init();
 })();
