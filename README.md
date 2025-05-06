@@ -1,5 +1,4 @@
-# Luofeixiang's Life Record
-
+# 记录我的人生
 ## Record Books
 
 > [Journal](docs/R02/)  
